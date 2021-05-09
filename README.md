@@ -39,5 +39,5 @@ Pavitra Behara
 Aditya Arpan Sahoo
 
 # Live Demo Link (Deployed website link):
-<github page link here>
+https://arpanaditya.github.io/summerhacks-Team-Bruteforce/
 
