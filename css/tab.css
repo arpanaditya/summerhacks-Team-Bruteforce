@@ -1,0 +1,102 @@
+#navbar ul{
+    padding-left: 0rem;
+ }
+#navbar li a{
+    font-size: 1.2rem;
+ }
+
+.main{
+    height: 40rem;
+    
+    grid-template-areas: 
+    'logo nav nav nav'
+    'wel wel wel wel'
+    'a_img a_img a_img a_img'
+    'a_con a_con a_con a_con'
+    'w_img w_img w_img w_img'
+    'w_con w_con w_con w_con'
+    's_img s_img s_img s_img'
+    's_con s_con s_con s_con'
+    'c_img c_img c_img c_img'
+    'c_con c_con c_con c_con '
+    'f f f f';
+}
+#welcome{
+    padding: 1rem 5rem;
+    font-size: 1.2rem;
+
+}
+#welcome img{
+    height: 8rem;
+    width: 8rem;
+}
+#about_img img{
+    margin-top: 1rem;
+}
+#about_con h1{
+    font-size: 5rem;
+}
+#about_con p{
+    font-size: 1.2rem;
+ }
+#work{
+    margin: auto;
+}
+#work img{
+    height: 23rem;
+    width: 35rem;
+    padding-left: 0rem;
+}
+
+#skill_img{
+    margin: auto;
+}
+#skill_img img{
+    height: 23rem;
+    width: 35rem;
+    padding-left: 0rem;
+}
+
+#contact_img{
+    margin: auto;
+}
+#contact_img img{
+    height: 23rem;
+    width: 35rem;
+    padding-left: 0rem;
+}
+
+#about_img{
+    margin: auto;
+}
+#about_img img{
+    height: 23rem;
+    width: 35rem;
+    padding-left: 0rem;
+}
+#work_contant h1{
+    font-size: 5rem;
+
+
+}
+#work_contant p{
+    font-size: 1.2rem;
+}
+
+#skill_con h1{
+    font-size: 5rem;
+}
+#skill_con p{
+    font-size: 1.2rem;
+}
+
+#contact_con h1{
+    font-size: 5rem;
+}
+#contact_con p{
+    font-size: 1.2rem;
+}
+
+
+
+ 

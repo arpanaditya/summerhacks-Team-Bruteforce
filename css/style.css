@@ -5,4 +5,288 @@
     Use this template: https://github.com/SOACodeRoom/summerhacks-projectName/generate
     style.css: You will write your css code for your portfolio website here. You can add other css files too but it must be under "css" folder.
 
+    Team-Bruteforce
+    Team Members:-
+    Aditya Arpan Sahoo
+    Pavitra Behara
 */
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+     font-family: 'Roboto Condensed', sans-serif;
+}
+.main{
+    box-shadow: 0px 12px 30px #f05a28;
+    border-top-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+    /* background-image:linear-gradient(352deg,#f05a28,#f7931e); */
+    background-color: #f05a28;
+    background-image: url("https://www.transparenttextures.com/patterns/food.png");
+    height: 40rem;
+    width: 100%;
+    display: grid;
+    grid-row-gap: 4rem;
+    grid-template-rows: 0fr 2fr 2fr 2fr;
+    grid-template-areas: 
+    'logo nav nav nav'
+    'wel wel wel wel'
+    'a_con a_con a_img a_img'
+    'w_img w_img w_con w_con'
+    's_con s_con s_img s_img'
+    'c_img c_img c_con c_con '
+    'f f f f';
+}
+ 
+                /* Navigation Bar section  */
+#logo{
+    position: fixed;
+    height: 4rem;
+    width: 8rem;
+    font-size: 1.8rem;
+    color: #000000;
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#navbar{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: nav;
+}
+
+#navbar li{
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+
+}
+#navbar ul{
+   padding-left: 30rem;
+}
+#navbar li a{
+    padding: 1rem;
+    text-decoration: none;
+    outline: none;
+    font-size: 1.8rem;
+    color: #ffffff;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: all 0.39s ease-in;
+}
+#navbar li a:hover{
+    background-color: #f9e090;
+    color: #f05a28;
+}
+
+
+                /*Welcome massage*/
+#welcome{
+    padding: 1rem 12rem;
+    grid-area: wel;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+    text-shadow:0px 0px 30px #d64413;
+    margin-bottom: 8rem;
+}
+#welcome img{
+    height: 10rem;
+    width: 10rem;
+    border-bottom: 5px solid #f9e090;
+    border-top-left-radius:none;
+    border-bottom-left-radius: 90px;
+    border-top-right-radius: none;
+    border-bottom-right-radius: 90px;
+}
+                    /*Explore button*/
+#explore_btn{
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-image: linear-gradient(144deg,#f05a28,#f7931e,#f7931e);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: all 0.39s ease-in-out;
+
+}
+#explore_btn a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#explore_btn:hover{
+    box-shadow: 0.2rem 0.2rem 7px #f9e09070, -0.2rem -0.2rem 7px #ac350d;
+    border-top-left-radius:0px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 0px;
+    transform: scale(1.1);
+    
+}
+
+                    /*Project Section*/
+#work{
+    grid-area: w_img;
+}
+#work_contant{
+    padding: 1rem 5rem;
+    grid-area: w_con;
+    text-align: center;
+    display: grid; 
+}
+#work_contant h1{
+    font-size: 6rem;
+    font-family: 'Bebas Neue', cursive;
+    color: #f05a28;
+    text-shadow: 9px 9px 0px #f9e090;
+
+}
+#work_contant p{
+   font-size: 1.5rem;
+   margin-bottom: 3rem;
+}
+#work img{
+  height: 23rem;
+  width: 40rem;
+  padding-left: 10rem;
+}
+                    /*Customization of icons*/
+.fa-color{
+    color: #f05a28;
+    transition: all 0.5s;
+    border-radius: 80px;
+    padding: 0rem 0.8rem;
+    transition: all 1s ;
+}
+.fa-color:hover{    
+    transform: scale(1.3);
+    animation: blink  linear 1s infinite;
+}
+                 /*Animation in Icons*/
+@keyframes blink {
+    0%{
+        color: #f05a28;
+    }
+    50%{
+        color: #f9e090;
+    }
+    100%{
+        color: #f05a28;
+    }
+}
+
+                    /*Skill section*/
+#skill_con{
+    grid-area:s_con ;
+    text-align: center;
+    padding: 1rem 5rem;
+   
+}
+#skill_con h1{
+    font-size: 6rem;
+    font-family: 'Bebas Neue', cursive;
+    color: #f05a28;
+    text-shadow: 9px 9px 0px #f9e090;
+    padding: 1rem 10rem;
+
+}
+#skill_con p{
+    font-size: 1.5rem;
+   margin-bottom: 3rem;
+ }
+
+#skill_img{
+    grid-area:s_img;
+}
+#skill_img img{
+    height: 23rem;
+    width: 40rem;
+    padding-left: 10rem;
+}
+                 /*Contact section*/
+#contact_con{
+    grid-area:c_con ;
+    text-align: center;
+    padding: 1rem 5rem;
+   
+}
+#contact_con h1{
+    font-size: 6rem;
+    font-family: 'Bebas Neue', cursive;
+    color: #f05a28;
+    text-shadow: 9px 9px 0px #f9e090;
+    padding: 1rem 10rem;
+
+}
+#contact_con p{
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+
+}
+#contact_img{
+    grid-area:c_img;
+}
+#contact_img img{
+    height: 23rem;
+    width: 43rem;
+    padding-left: 4rem;
+}
+                    /*About section*/
+#about_con{
+    grid-area:a_con ;
+    text-align: center;
+    padding: 1rem 5rem;
+   
+}
+#about_con h1{
+    cursor: pointer;
+    font-size: 6rem;
+    font-family: 'Bebas Neue', cursive;
+    color: #f05a28;
+    text-shadow: 9px 9px 0px #f9e090;
+    padding: 1rem 10rem;
+}
+#about_con p{
+    font-size: 1.5rem;
+ }
+
+#about_img{
+    grid-area:a_img;
+}
+#about_img img{
+    height: 20rem;
+    width: 42rem;
+    padding-left: 12rem;
+}
+                    /*Footer(Copyright section)*/
+#footer{
+    grid-area:f;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius:15px ;
+    border-top-right-radius:15px ;
+    height: 40px;
+    background-image:radial-gradient(#f05a28,#f7931e);
+    /* (352deg,#f05a28,#f7931e) */
+    color: #f9e090;
+    font-size: 1.2rem;
+}

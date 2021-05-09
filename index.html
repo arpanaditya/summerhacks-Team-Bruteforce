@@ -4,6 +4,12 @@
     Project Template
     Use this template: https://github.com/SOACodeRoom/summerhacks-projectName/generate
     index.html: You will write your html code for your portfolio website here.
+
+
+    Team-Bruteforce
+    Team Members:-
+    Aditya Arpan Sahoo
+    Pavitra Behara
  -->
 
 
@@ -14,10 +20,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:680px)" href="./css/phone.css">
+    <link rel="stylesheet" media="screen and (max-width:1468px)" href="./css/tab.css">
 </head>
 <body>
-    
+    <div class="main"> 
+        <!--logo-->
+        <div id="logo"><a href="#navbar"><i class="fas fa-terminal fa-1x fa-color"></i></i></a></div>
+        <!-- Navigation  bar -->
+        <div  id="navbar">
+            <ul>
+                <li><a href="#logo" id="Home">Home</a></li>
+                <li><a href="#about_con" id="About">About</a></li>
+                <li><a href="#work" id="Projects">Projects</a></li>
+                <li><a href="#skill_con" id="Projects">Skills</a></li>
+                <li><a href="#contact_con" id="Contact me">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Welcome section -->
+        <div id="welcome">
+            <img src="./assets/pngegg.png" alt="">
+            <h1 id="message_wel" style="transition: all 0.39s ease-in;"">Hey! there, My self Pavitra..and..</h1><br>
+            <p>I'm Pavitra, a cse undergraduate specializing in Web Development and as well as in React.js. I like to code which is my passion.</p>
+            <button id="explore_btn"><a href="#about_img">Explore</a></button>
+        </div>
+        <!-- Project section -->
+        <div id="work"><img src="./assets/undraw_dev_productivity_umsq.png" alt=""></div>
+        <div id="work_contant">
+            <h1>PROJECT'S</h1>
+            <p>These are examples of some of my works which I have managed to do being a beginner. You can check it on GitHub. Projects are very much important for learning. I believe in developing things by implementing what I learn which helps in remembering things for a longer time. I like developing in react.js!
+            </p>
+            <a  target="_blank" href="https://github.com/Pavitra554"><i class="fab fa-github fa-5x fa-color"></i></a>
+        </div>
+        <!-- Skill section -->
+        <div id="skill_con">
+            <h1>SKILL'S</h1>
+            <P>These are my skills. Being a beginner can not able to stop me from learning. As a beginner I have gone through lot of insecurities and doubts, but still I keep learning things. Among all these skillset React.js and React Native are my favourite. This is the thing that I'm proud of myself. Thanks to me .</P>
+                <a  target="_blank" href="https://www.w3schools.com/js/DEFAULT.asp"><i class="fab fa-html5 fa-4x fa-color"></i></a>
+                <a  target="_blank" href="https://www.w3schools.com/css/default.asp"><i class="fab fa-css3-alt fa-4x fa-color"></i></i></a>
+                <a  target="_blank" href="https://www.w3schools.com/html/default.asp"><i class="fab fa-js-square fa-4x fa-color"></i></a>
+                <a  target="_blank" href="https://reactjs.org/"><i class="fab fa-react fa-4x fa-color"></i></a>
+                <a  target="_blank" href="https://nodejs.org/en/docs/"><i class="fab fa-node-js fa-4x fa-color"></i></a>
+                <a  target="_blank" href="https://docs.mongodb.com/"><i class="fas fa-database fa-4x fa-color"></i></a>
+        </div>
+        <div id="skill_img">
+            <img src="./assets/undraw_Web_developer_re_h7ie.png" alt="">
+        </div>
+        <!-- Contact section -->
+        <div id="contact_img"><img src="./assets/undraw_Processing_re_tbdu.png" alt=""></div>
+        <div id="contact_con">
+            <h1>Contact</h1>
+            <p>If you like my portfolio, don't hesitate to reach out. You can write me a message anytime. I will be happy to interact with you. Thank you for your time.</p>
+                <a target="_blank"  href="https://www.facebook.com/pavitra.kumar.737001"><i class="fab fa-facebook fa-4x fa-color"></i></a>
+                <a target="_blank"  href="https://www.instagram.com/pavitra_behara/"><i class="fab fa-instagram fa-4x fa-color"></i></a>
+                <a target="_blank"  href="https://www.linkedin.com/in/pavitra-behara-07941a200/"><i class="fab fa-linkedin-in fa-4x fa-color"></i></a>
+                <a target="_blank"  href="https://twitter.com/BeharaPavitra"><i class="fab fa-twitter fa-4x fa-color"></i></a>
+                <a target="_blank"  href="mailto:pavitraredmi@gmail.com"><i class="far fa-envelope fa-4x fa-color"></i></a>
+                
+                
+        </div>
+        <!-- About section -->
+        <div id="about_con">
+            <h1>About</h1>
+            <p>I live in Bhubaneswar. I love to code.
+                My aim is to use my creativity and skills to meet peoples actual needs and expectation. I am very friendly and enthusiastic person. In my free time I like to sit down with a cup of coffee and draw things, which boosts my creativity.</p>
+        </div>
+        <div id="about_img"><img src="./assets/undraw_Updated_resume_re_q1or.png" alt=""></div>
+        <!-- Copyright© section  -->
+        <div id="footer">Copyright© Pavitra's Portfolio, Inc. All right reserved</div>
+        
+        
+        
+    </div>
 </body>
 <script src="./js/script.js"></script>
 </html>
